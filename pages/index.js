@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../comps/Navbar";
 import styles from "../styles/Layout.module.css";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
 				<title>Sifk | Twitch Streamer</title>
 				<link rel="icon" href="/favicon32.png" />
 			</Head>
-
+			{/* <Navbar /> */}
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					Hi!, my name is Sifk, a
