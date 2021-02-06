@@ -9,7 +9,7 @@ export default function Home() {
 				<title>Sifk | Twitch Streamer</title>
 				<link rel="icon" href="/favicon32.png" />
 			</Head>
-			{/* <Navbar /> */}
+			<Navbar />
 			<main className={styles.main}>
 				<h1 className={styles.title}>
 					Hi!, my name is Sifk, a
