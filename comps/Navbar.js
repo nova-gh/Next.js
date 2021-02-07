@@ -28,17 +28,16 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function Navbar({ children }) {
+export default function Navbar() {
 	const classes = useStyles();
 
 	return (
 		<AppBar position="static" className={classes.appbar}>
 			<Toolbar>
 				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
-				<Typography variant="h6" className={classes.title}>
-					News
-				</Typography>
-				<Button className={classes.menuButton}>Login</Button>
+				<Typography variant="h6" className={classes.title}></Typography>
+				<Button className={classes.menuButton}>About</Button>
+				<Button className={classes.menuButton}>Contact</Button>
 			</Toolbar>
 		</AppBar>
 	);
