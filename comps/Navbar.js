@@ -10,13 +10,14 @@ import { Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
-		backgroundColor: "#00587a",
+		backgroundColor: "#1D1D1E",
 	},
 	root: {
 		flexGrow: 1,
 	},
 	menuButton: {
 		marginRight: theme.spacing(2),
+		color: "white",
 	},
 	title: {
 		flexGrow: 1,

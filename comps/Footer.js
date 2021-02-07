@@ -6,6 +6,15 @@ const useStyles = makeStyles((theme) => ({
 	appbar: {
 		backgroundColor: "#00587a",
 	},
+	footer: {
+		width: "100%",
+		height: "100px",
+		borderTop: "1px solid #68707F",
+		background: "grey",
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+	},
 	footerP: {
 		color: "white",
 	},
@@ -19,7 +28,7 @@ export default function Footer() {
 
 	return (
 		<div className>
-			<footer className={styles.footer}>
+			<footer className={classes.footer}>
 				<p className={classes.footerP}>Copyright © {getCurrYear()}, N Gh.</p>
 			</footer>
 		</div>
