@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
 		height: "70px",
 		paddingTop: "5px",
 	},
+	twitch: {
+		color: "#551a8b",
+	},
 	twitter: {
 		color: "##03a9f4",
 	},
@@ -48,6 +51,7 @@ export default function Contact() {
 								className="socials twitch"
 								icon={faTwitch}
 								size="3x"
+								className={(classes.twitch, classes.social)}
 							/>
 						</a>
 					</Grid>
@@ -58,7 +62,7 @@ export default function Contact() {
 							rel="noreferrer"
 						>
 							<FontAwesomeIcon
-								className="socials twitter"
+								className={(classes.twitter, classes.social)}
 								icon={faTwitter}
 								size="3x"
 							/>
@@ -71,7 +75,7 @@ export default function Contact() {
 							rel="noreferrer"
 						>
 							<FontAwesomeIcon
-								className="socials discord"
+								className={(classes.discord, classes.social)}
 								icon={faDiscord}
 								size="3x"
 							/>
