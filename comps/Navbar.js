@@ -1,13 +1,10 @@
 import React from "react";
-// import Link from "next/link";
-import paths from "../path";
+import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import { Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,14 +34,16 @@ const Navbar = () => {
 	return (
 		<AppBar position="static" className={classes.appbar}>
 			<Toolbar>
-				{/* <Link href="/index" passHref> */}
-				{/* <Link to={path.home}> */}
-				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
-				{/* </Link> */}
-				{/* </Link> */}
+				<Link href="/">
+					<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
+				</Link>
 				<Typography variant="h6" className={classes.title}></Typography>
-				<Button className={classes.menuButton}>About</Button>
-				<Button className={classes.menuButton}>Contact</Button>
+				<Link href="/about">
+					<Button className={classes.menuButton}>About</Button>
+				</Link>
+				<Link href="/contact">
+					<Button className={classes.menuButton}>Contact</Button>
+				</Link>
 			</Toolbar>
 		</AppBar>
 	);
