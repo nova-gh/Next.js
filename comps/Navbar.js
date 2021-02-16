@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import paths from "../path";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -39,8 +39,9 @@ const Navbar = () => {
 			<Toolbar>
 				{/* <Link href="/index" passHref> */}
 				<Link to={path.home}>
-					<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
-				</Link>
+				{/* <Link to={path.home}> */}
+				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
+				{/* </Link> */}
 				{/* </Link> */}
 				<Typography variant="h6" className={classes.title}></Typography>
 				<Button className={classes.menuButton}>About</Button>
