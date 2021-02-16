@@ -38,7 +38,6 @@ const Navbar = () => {
 		<AppBar position="static" className={classes.appbar}>
 			<Toolbar>
 				{/* <Link href="/index" passHref> */}
-				<Link to={path.home}>
 				{/* <Link to={path.home}> */}
 				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
 				{/* </Link> */}
