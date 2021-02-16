@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+import paths from "../path";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -29,17 +31,23 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function Navbar() {
+const Navbar = () => {
 	const classes = useStyles();
 
 	return (
 		<AppBar position="static" className={classes.appbar}>
 			<Toolbar>
-				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
+				{/* <Link href="/index" passHref> */}
+				<Link to={path.home}>
+					<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
+				</Link>
+				{/* </Link> */}
 				<Typography variant="h6" className={classes.title}></Typography>
 				<Button className={classes.menuButton}>About</Button>
 				<Button className={classes.menuButton}>Contact</Button>
 			</Toolbar>
 		</AppBar>
 	);
-}
+};
+
+export default Navbar;
