@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -36,18 +35,10 @@ export default function Navbar() {
 	return (
 		<AppBar position="static" className={classes.appbar}>
 			<Toolbar>
-				<Link href="/">
-					<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
-				</Link>
-
+				<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
 				<Typography variant="h6" className={classes.title}></Typography>
-				<Link href="/about">
-					<Button className={classes.menuButton}>About</Button>
-				</Link>
-
-				<Link href="/contact">
-					<Button className={classes.menuButton}>Contact</Button>
-				</Link>
+				<Button className={classes.menuButton}>About</Button>
+				<Button className={classes.menuButton}>Contact</Button>
 			</Toolbar>
 		</AppBar>
 	);
