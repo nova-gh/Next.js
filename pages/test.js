@@ -3,19 +3,19 @@ const axios = require("axios");
 // const cID = "wgeg2j55eg26p46i1zklnrkpd8no0y";
 
 const Test = () => {
-	const stream = [];
+	// const stream = [];
 	const getStream = (e) => {
 		e.preventDefault();
 		axios({
 			url: "https://api.twitch.tv/helix/streams?user_login=imaqtpie",
 			method: "get",
 			headers: {
-				Authorization: "Bearer 5ptw0u1s2d5wajujw03czl2dq6nmy9",
-				"Client-Id": "wgeg2j55eg26p46i1zklnrkpd8no0y",
+				Authorization: {env.AUTH},
+				"Client-Id": {env.C_ID},
 			},
 		})
 			.then((response) => {
-				stream(response.data);
+				// stream(response.data);
 				console.log(response);
 			})
 			.catch((err) => {
