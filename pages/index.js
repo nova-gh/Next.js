@@ -11,12 +11,10 @@ export default function Home() {
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
 			/>
 
-			{/* <main className={styles.main}> */}
 			<Container>
 				<Row className={styles.homeRow}>
 					<Image
 						src="/avatar.svg"
-						// src={logo}
 						alt="avatar"
 						width={200}
 						height={200}
@@ -33,7 +31,6 @@ export default function Home() {
 					</h1>
 				</Row>
 			</Container>
-			{/* </main> */}
 		</div>
 	);
 }
