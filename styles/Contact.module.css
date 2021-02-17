@@ -1,12 +1,4 @@
-/* Home/Index */
-.homeRow {
-	justify-content: center;
-}
-.avatarHome {
-	max-width: 200px;
-	max-height: 250px;
-}
-/*  */
+/* Contact*/
 .wrapper {
 	min-height: 80vh;
 	display: flex;
@@ -15,6 +7,14 @@
 	align-items: center;
 }
 
+.main {
+	padding: 0rem auto 0rem auto;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .title a {
 	color: red;
 	text-decoration: underline;
@@ -31,7 +31,4 @@
 	line-height: 1.15;
 	padding-top: 1rem;
 	font-size: 3rem;
-}
-
-@media (max-width: 600px) {
 }

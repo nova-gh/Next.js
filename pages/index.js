@@ -1,11 +1,11 @@
 import Image from "next/image";
-import styles from "../styles/home.module.css";
-import Avatar from "avataaars";
+import styles from "../styles/Home.module.css";
+
 import Meta from "../comps/Meta";
 import { Row, Col, Container } from "react-bootstrap";
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.wrapper}>
 			<Meta
 				title="Home"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
@@ -14,20 +14,6 @@ export default function Home() {
 			{/* <main className={styles.main}> */}
 			<Container>
 				<Row className={styles.homeRow}>
-					{/* <Avatar
-						topType="ShortHairTheCaesar"
-						accessoriesType="Blank"
-						hairColor="Black"
-						facialHairType="BeardLight"
-						facialHairColor="Black"
-						clotheType="Hoodie"
-						clotheColor="PastelRed"
-						eyeType="Happy"
-						eyebrowType="Default"
-						mouthType="Smile"
-						skinColor="DarkBrown"
-						className={styles.avatar}
-					/> */}
 					<Image
 						src="/avatar.svg"
 						// src={logo}
@@ -43,7 +29,7 @@ export default function Home() {
 				<Row className={styles.homeRow}>
 					<h1 className={styles.title}>
 						My name is Sifk, a {}
-						<a href="https://www.twitch.tv/sifk">Twitch Streamer!</a>
+						<a href="https://www.twitch.tv/sifk">Twitch Streamer.</a>
 					</h1>
 				</Row>
 			</Container>

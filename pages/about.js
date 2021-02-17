@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import styles from "../styles/Layout.module.css";
+import styles from "../styles/About.module.css";
 import Meta from "../comps/Meta";
 export default function About() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.wrapper}>
 			<Meta
 				title="About"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."

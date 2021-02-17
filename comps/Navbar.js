@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Layout.module.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 // import logo from "../public/logo.svg";
 import Image from "next/image";

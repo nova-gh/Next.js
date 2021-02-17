@@ -1,6 +1,6 @@
 import React from "react";
 import Meta from "../comps/Meta";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Contact.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitch,
@@ -10,7 +10,7 @@ import {
 import { Row, Col } from "react-bootstrap";
 export default function Contact() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.wrapper}>
 			<Meta
 				title="Contact"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
