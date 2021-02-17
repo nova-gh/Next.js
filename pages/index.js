@@ -1,7 +1,5 @@
-import Head from "next/head";
 import styles from "../styles/home.module.css";
 import Avatar from "avataaars";
-import { Container } from "@material-ui/core";
 import Meta from "../comps/Meta";
 import { Row, Col } from "react-bootstrap";
 export default function Home() {
