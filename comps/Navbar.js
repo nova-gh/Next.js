@@ -1,52 +1,55 @@
 import React from "react";
 import Link from "next/link";
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import { Avatar } from "@material-ui/core";
+import styles from "../styles/home.module.css";
+import { Navbar, Nav, Container } from "react-bootstrap";
+// import logo from "../public/logo.svg";
+import Image from "next/image";
+// import logo from "../public/favicon32.png";
 
-const useStyles = makeStyles((theme) => ({
-	appbar: {
-		backgroundColor: "#00FFFF",
-	},
-	root: {
-		flexGrow: 1,
-	},
-	menuButton: {
-		marginRight: theme.spacing(2),
-		color: "white",
-	},
-	title: {
-		flexGrow: 1,
-	},
-	avatar: {
-		width: "70px",
-		height: "70px",
-		paddingTop: "5px",
-	},
-}));
-
-const Navbar = () => {
-	const classes = useStyles();
-
+const Navigation = () => {
 	return (
-		<AppBar position="static" className={classes.appbar}>
-			<Toolbar>
-				<Link href="/">
-					<Avatar alt="Logo" src="/logo.svg" className={classes.avatar} />
-				</Link>
-				<Typography variant="h6" className={classes.title}></Typography>
-				<Link href="/about">
-					<Button className={classes.menuButton}>About</Button>
-				</Link>
-				<Link href="/contact">
-					<Button className={classes.menuButton}>Contact</Button>
-				</Link>
-			</Toolbar>
-		</AppBar>
+		<Navbar
+			collapseOnSelect
+			expand="lg"
+			bg=""
+			variant="light"
+			className={styles.navColor}
+		>
+			<Link href="/">
+				<Navbar.Brand href="#home">
+					<Image
+						src="/../public/logo1.svg"
+						// src={logo}
+						className="d-inline-block align-top "
+						alt="logo"
+						width={60}
+						height={60}
+						className={styles.logo}
+					/>
+					{/* missing source  */}
+				</Navbar.Brand>
+			</Link>
+
+			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+			<Navbar.Collapse id="responsive-navbar-nav">
+				<Nav className="ml-auto" variant="dark">
+					<Link href="/">
+						<Nav.Link className={styles.linkColor} href="#home">
+							Home
+						</Nav.Link>
+					</Link>
+					<Link href="/about">
+						<Nav.Link className={styles.linkColor} href="#about">
+							About
+						</Nav.Link>
+					</Link>
+					<Link href="/contact">
+						<Nav.Link href="#contact">Contact</Nav.Link>
+					</Link>
+				</Nav>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 };
 
-export default Navbar;
+export default Navigation;
