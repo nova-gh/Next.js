@@ -1,87 +1,62 @@
 import React from "react";
-import Head from "next/head";
-import styles from "../styles/Layout.module.css";
-import { makeStyles } from "@material-ui/core/styles";
+import Meta from "../comps/Meta";
+import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitch,
 	faTwitter,
 	faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-
-import { Grid } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-	root: {
-		flexGrow: 1,
-	},
-	socials: {
-		width: "700px",
-		height: "70px",
-		paddingTop: "5px",
-	},
-	twitch: {
-		color: "#551a8b",
-	},
-	twitter: {
-		color: "##03a9f4",
-	},
-	discord: {
-		color: "##7289d9",
-	},
-}));
-
+import { Row, Col } from "react-bootstrap";
 export default function Contact() {
-	const classes = useStyles();
 	return (
 		<div className={styles.container}>
-			<Head>
-				<title>Contact| SIFK</title>
-				<link rel="icon" href="/favicon32.png" />
-			</Head>
+			<Meta
+				title="Contact"
+				desc="Sifk's Twitch Streamer. Come say hello in the chat."
+			/>
 			<main className={styles.main}>
-				<Grid container spacing={3}>
-					<Grid item>
+				<Row>
+					<Col className={styles.socialContact}>
 						<a
 							href="https://www.twitch.tv/sifk"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<FontAwesomeIcon
-								className="socials twitch"
 								icon={faTwitch}
-								size="3x"
-								className={(classes.twitch, classes.social)}
+								style={{ color: "#9147ff" }}
+								size="5x"
 							/>
 						</a>
-					</Grid>
-					<Grid item>
+					</Col>
+					<Col className={styles.socialContact}>
 						<a
 							href="https://twitter.com/SIFKontwitch"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<FontAwesomeIcon
-								className={(classes.twitter, classes.social)}
 								icon={faTwitter}
-								size="3x"
+								style={{ color: "#1da1f2" }}
+								size="5x"
 							/>
 						</a>
-					</Grid>
-					<Grid item>
+					</Col>
+					<Col className={styles.socialContact}>
 						<a
 							href="https://discord.com/invite/NjpVcEu"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<FontAwesomeIcon
-								className={(classes.discord, classes.social)}
+								style={{ color: "#7289da" }}
 								icon={faDiscord}
-								size="3x"
+								size="5x"
 							/>
 						</a>
-					</Grid>
-				</Grid>
+					</Col>
+				</Row>
 			</main>
 		</div>
 	);
