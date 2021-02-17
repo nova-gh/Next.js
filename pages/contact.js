@@ -1,6 +1,6 @@
 import React from "react";
 import Meta from "../comps/Meta";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitch,
