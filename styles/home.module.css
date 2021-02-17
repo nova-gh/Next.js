@@ -1,0 +1,52 @@
+.container {
+	min-height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main {
+	padding: 2rem auto 0rem auto;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.grid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin-top: 3rem;
+}
+.avatar {
+	background-color: red;
+}
+.title a {
+	color: red;
+	text-decoration: underline;
+}
+.title a:hover,
+.title a:focus,
+.title a:active {
+	text-decoration: dashed;
+	color: #00ffff;
+}
+
+.title {
+	margin: 0;
+	line-height: 1.15;
+	padding-top: 1rem;
+	font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+}
