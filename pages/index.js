@@ -2,17 +2,18 @@ import Head from "next/head";
 import styles from "../styles/home.module.css";
 import Avatar from "avataaars";
 import { Container } from "@material-ui/core";
-
+import Meta from "../comps/Meta";
+import { Row, Col } from "react-bootstrap";
 export default function Home() {
 	return (
 		<div className={styles.container}>
-			<Head>
-				<title>Sifk | Twitch Streamer</title>
-				<link rel="icon" href="/favicon32.png" />
-			</Head>
+			<Meta
+				title="Home"
+				desc="Sifk's Twitch Streamer. Come say hello in the chat."
+			/>
 
 			<main className={styles.main}>
-				<grid className={styles.grid}>
+				<Row>
 					<Avatar
 						topType="ShortHairTheCaesar"
 						accessoriesType="Blank"
@@ -27,12 +28,16 @@ export default function Home() {
 						skinColor="DarkBrown"
 						className={styles.avatar}
 					/>
+				</Row>
+				<Row>
 					<h1 className={styles.title}>Hello!</h1>
+				</Row>
+				<Row>
 					<h1 className={styles.title}>
 						My name is Sifk, a {}
 						<a href="https://www.twitch.tv/sifk">Twitch Streamer!</a>
 					</h1>
-				</grid>
+				</Row>
 			</main>
 		</div>
 	);
