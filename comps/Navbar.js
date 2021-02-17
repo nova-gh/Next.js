@@ -18,7 +18,7 @@ const Navigation = () => {
 			<Link href="/">
 				<Navbar.Brand href="#home">
 					<Image
-						src="/../public/logo1.svg"
+						src="/logo1.svg"
 						// src={logo}
 						className="d-inline-block align-top "
 						alt="logo"
