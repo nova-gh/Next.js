@@ -9,7 +9,7 @@ import { Avatar } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	appbar: {
-		backgroundColor: "#82c9d2",
+		backgroundColor: "#00FFFF",
 	},
 	root: {
 		flexGrow: 1,
