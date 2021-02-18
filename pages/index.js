@@ -1,5 +1,5 @@
+import styles from "./Home.module.css";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 import Meta from "../comps/Meta";
 import { Row, Col, Container } from "react-bootstrap";
