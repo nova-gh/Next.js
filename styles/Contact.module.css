@@ -7,10 +7,9 @@
 	align-items: center;
 }
 .contactRow {
-	padding-top: 15%;
-	padding-left: auto;
-	padding-right: auto;
-	padding-bottom: 15%;
+	padding-top: 16%;
+
+	padding-bottom: 16%;
 }
 .socialCont {
 	max-width: 40%;
