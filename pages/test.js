@@ -15,7 +15,6 @@ const Test = () => {
 			},
 		})
 			.then((response) => {
-				stream(response.data);
 				console.log(response);
 			})
 			.catch((err) => {
