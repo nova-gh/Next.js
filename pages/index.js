@@ -49,18 +49,18 @@ export default function Home() {
 		</div>
 	);
 }
-export async function getServerSideProps() {
-	// console.log(process.env.AUTH);
-	// console.log(process.env.CID);
-	const res = await fetch(process.env.API_URL, {
-		headers: {
-			Authorization: process.env.AUTH,
-			"Client-Id": process.env.CID,
-		},
-	});
-	const results = await res.json();
-	// console.log(results);
-	return {
-		props: { results },
-	};
-}
+// export async function getServerSideProps() {
+// 	// console.log(process.env.AUTH);
+// 	// console.log(process.env.CID);
+// 	const res = await fetch(process.env.API_URL, {
+// 		headers: {
+// 			Authorization: process.env.AUTH,
+// 			"Client-Id": process.env.CID,
+// 		},
+// 	});
+// 	const results = await res.json();
+// 	// console.log(results);
+// 	return {
+// 		props: { results },
+// 	};
+// }
