@@ -3,6 +3,7 @@ import styles from "../styles/Index.module.css";
 import Image from "next/image";
 
 import Meta from "../comps/Meta";
+import Live from "../comps/Live";
 import { Row, Col, Container } from "react-bootstrap";
 export default function Home() {
 	return (
@@ -31,6 +32,7 @@ export default function Home() {
 						<a href="https://www.twitch.tv/sifk">Twitch Streamer.</a>
 					</h1>
 				</Row>
+				<Row className={styles.homeRow}>{/* live */}</Row>
 			</Container>
 		</div>
 	);
