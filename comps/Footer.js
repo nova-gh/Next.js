@@ -15,7 +15,7 @@ export default function Footer() {
 					viewBox="0 0 1200 120"
 					xmlns="http://www.w3.org/2000/svg"
 					style={{
-						fill: "#9fd7e3",
+						fill: "#00cccc",
 						width: "100%",
 						height: "22px",
 						transform: "rotate(180deg)",
@@ -26,7 +26,7 @@ export default function Footer() {
 				</svg>
 			</div>
 			<footer className={styles.footer}>
-				<p className={styles.footerP}>Copyright © {getCurrYear()}, N Gh.</p>
+				<p className={styles.footerP}> © {getCurrYear()}, N Gh.</p>
 			</footer>
 		</Container>
 	);
