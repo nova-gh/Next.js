@@ -7,7 +7,8 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 
 import { Row, Col, Container } from "react-bootstrap";
-export default function Home({ results }) {
+export default function Home() {
+	// export default function Home({ results }) {
 	// const apiResults = results.data;
 	// console.log(apiResults);
 	// var statusButton;
