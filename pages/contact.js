@@ -17,7 +17,7 @@ export default function Contact() {
 			/>
 			<Container>
 				<Row className={styles.contactRow}>
-					<Col className>
+					<Col sm="4" md="4" lg="12" className>
 						<Container className={styles.socialCont}>
 							<a
 								href="https://www.twitch.tv/sifk"
@@ -27,12 +27,12 @@ export default function Contact() {
 								<FontAwesomeIcon
 									icon={faTwitch}
 									style={{ color: "#9147ff" }}
-									size="xs"
+									size="1xs"
 								/>
 							</a>
 						</Container>
 					</Col>
-					<Col className>
+					<Col sm="4" md="4" lg="12" className>
 						<Container className={styles.socialCont}>
 							<a
 								href="https://twitter.com/SIFKontwitch"
@@ -47,7 +47,7 @@ export default function Contact() {
 							</a>
 						</Container>
 					</Col>
-					<Col className>
+					<Col sm="4" md="4" lg="12" className>
 						<Container className={styles.socialCont}>
 							<a
 								href="https://discord.com/invite/NjpVcEu"
