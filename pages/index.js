@@ -8,14 +8,14 @@ import Offline from "../comps/Offline";
 
 import { Row, Col, Container } from "react-bootstrap";
 export default function Home({ results }) {
-	const apiResults = results.data;
-	console.log(apiResults);
-	var statusButton;
-	if (!Array.isArray(apiResults) || !apiResults.length) {
-		statusButton = <Offline />;
-	} else {
-		statusButton = <Online />;
-	}
+	// const apiResults = results.data;
+	// console.log(apiResults);
+	// var statusButton;
+	// if (!Array.isArray(apiResults) || !apiResults.length) {
+	// 	statusButton = <Offline />;
+	// } else {
+	// 	statusButton = <Online />;
+	// }
 
 	return (
 		<div className={styles.wrapper}>
@@ -43,7 +43,7 @@ export default function Home({ results }) {
 						<a href="https://www.twitch.tv/sifk">Twitch Streamer.</a>
 					</h1>
 				</Row>
-				<Row className={styles.homeRow}>{statusButton}</Row>
+				{/* <Row className={styles.homeRow}>{statusButton}</Row> */}
 			</Container>
 		</div>
 	);
