@@ -51,7 +51,7 @@ const Navigation = () => {
 					viewBox="0 0 1200 120"
 					xmlns="http://www.w3.org/2000/svg"
 					style={{
-						fill: "#00ffff",
+						fill: "#00cccc",
 						width: "100%",
 						height: "22px",
 						transform: "scaleX(-1)",
