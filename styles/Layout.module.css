@@ -5,7 +5,7 @@
 }
 .navColor {
 	/* background-color: #112d4e; */
-	background-color: #00ffff;
+	background-color: #00cccc;
 	font-family: "Righteous", serif;
 }
 .logo {
@@ -15,7 +15,7 @@
 	text-align: center;
 	margin-left: auto;
 }
-.bg-custom {
+.custom {
 	color: red;
 }
 /* Footetr Comp */
@@ -26,14 +26,36 @@
 .footer {
 	width: 100%;
 	height: 100px;
-	background: #9fd7e3;
-	display: flex;
+	background: #00cccc;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 }
 .footerP {
-	color: white;
+	color: #001919;
 }
 .socialContact {
 	padding: 2rem;
+}
+/* Index button */
+.offlineCont {
+	padding-top: 10%;
+	display: inline-flex;
+}
+.offlineCirlce {
+	height: 13px;
+	width: 13px;
+	background-color: grey;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 7px;
+}
+.onlineCont {
+	padding-top: 10%;
+	display: inline-flex;
+}
+.onlineCirlce {
+	height: 13px;
+	width: 13px;
+	margin-right: 7px;
 }
