@@ -1,34 +1,25 @@
 /* about*/
 .wrapper {
-	min-height: 80vh;
+	min-height: 70vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 }
-
-.main {
-	padding: 0rem auto 0rem auto;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.aboutCont {
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
-.title a {
-	color: red;
-	text-decoration: underline;
-}
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
-	color: #9147ff;
-}
-
 .title {
-	margin: 0;
-	line-height: 1.15;
-	padding-top: 1rem;
-	font-size: 3rem;
+	text-decoration: underline;
+}
+.text {
+	color: #4c4c4c;
+}
+@media only screen and (max-width: 577px) {
+	.aboutCont {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
