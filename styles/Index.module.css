@@ -1,6 +1,7 @@
 /* Home/Index */
 .homeRow {
 	justify-content: center;
+	padding-top: 2%;
 }
 .avatarHome {
 	max-width: 200px;
@@ -8,7 +9,7 @@
 }
 /*  */
 .wrapper {
-	min-height: 70vh;
+	min-height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -35,6 +36,7 @@
 }
 .statusRow {
 	padding-top: 3%;
+	padding-bottom: 2%;
 	justify-content: center;
 }
 
@@ -42,5 +44,8 @@
 	.wrapper {
 		padding-right: 10%;
 		padding-left: 10%;
+	}
+	.statusRow {
+		padding-bottom: 2%;
 	}
 }

@@ -1,6 +1,6 @@
 /* about*/
 .wrapper {
-	min-height: 70vh;
+	min-height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

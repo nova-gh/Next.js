@@ -12,7 +12,7 @@ export default function About() {
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
 			/>
 			<Container className={styles.aboutCont}>
-				<Media className="pb-4">
+				<Media className="pb-5">
 					<img
 						className="mr-3 rounded"
 						width={120}
@@ -25,16 +25,18 @@ export default function About() {
 						<p className={styles.text}>
 							I am based of West Coast and currently a student majoring in
 							Economics. As the pandemic started last year, I decided to start
-							streaming on Twitch TV.
+							streaming on Twitch TV. Come see m
 						</p>
 					</Media.Body>
 				</Media>
-				<Media className="pb-4">
+				<Media className="pb-5">
 					<Media.Body>
 						<h5 className={styles.title}>Hobbies</h5>
 						<p className={styles.text}>
 							When I am not streaming, I like to stay active. My favorite way to
-							stay active would be doing Jui Jitsu or playing soccer.
+							stay active would be doing Jui Jitsu or playing soccer. I am also
+							a tech and coffee enthusiast, and my go-to method for making
+							strong coffee would be a slow drip.
 						</p>
 					</Media.Body>
 					<img
@@ -45,7 +47,7 @@ export default function About() {
 						src="/ju.JPG"
 					/>
 				</Media>
-				<Media className="pb-4">
+				<Media className="pb-5">
 					<img
 						className="mr-3 rounded"
 						width={120}
@@ -57,9 +59,9 @@ export default function About() {
 						<h5 className={styles.title}>Streaming Content</h5>
 						<p className={styles.text}>
 							As of right now I am mainly playing Hunt Show Down and enjoying
-							making content with other like minded streamers. I also play and
+							making content with other like-minded streamers. I also play and
 							stream other games such as Call of Duty: Warzone, League of
-							Legends, Rust and much more.
+							Legends, Rust, and much more.
 						</p>
 					</Media.Body>
 				</Media>
