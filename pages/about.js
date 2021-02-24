@@ -23,7 +23,7 @@ export default function About() {
 					<Media.Body>
 						<h5 className={styles.title}>About me</h5>
 						<p className={styles.text}>
-							I am based on West Coast and currently a student majoring in
+							I am based of West Coast and currently a student majoring in
 							Economics. As the pandemic started last year, I decided to start
 							streaming on Twitch TV.
 						</p>
@@ -34,9 +34,7 @@ export default function About() {
 						<h5 className={styles.title}>Hobbies</h5>
 						<p className={styles.text}>
 							When I am not streaming, I like to stay active. My favorite way to
-							stay active would be doing Brazilian Jiu-Jitsu or playing soccer.
-							I am a huge coffee consumer and my go-to method for making coffee
-							would be to slow drip for the maximum caffeine.
+							stay active would be doing Jui Jitsu or playing soccer.
 						</p>
 					</Media.Body>
 					<img
@@ -59,9 +57,9 @@ export default function About() {
 						<h5 className={styles.title}>Streaming Content</h5>
 						<p className={styles.text}>
 							As of right now I am mainly playing Hunt Show Down and enjoying
-							making content and memeing with other like-minded streamers. I
-							also play and stream other games such as Call of Duty: Warzone,
-							League of Legends, Rust, and much more.
+							making content with other like minded streamers. I also play and
+							stream other games such as Call of Duty: Warzone, League of
+							Legends, Rust and much more.
 						</p>
 					</Media.Body>
 				</Media>
