@@ -15,10 +15,10 @@ export default function Contact() {
 				title="Contact"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
 			/>{" "}
+			<img className="pt-4 rounded" alt="sifk" src="/hi.png" />
 			<h5 className={styles.text}>
 				Come say hi on the stream or hit me up through my socials.
 			</h5>
-			<img className="pt-4 rounded" alt="sifk" src="/hi.png" />
 			<Container className={styles.contactCont}>
 				<Row lg="12" className={styles.contactRow}>
 					<Container className={styles.linkCont}>
