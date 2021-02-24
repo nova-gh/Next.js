@@ -4,7 +4,7 @@ const Offline = () => {
 	return (
 		<Button variant="light">
 			<div className={styles.offlineCont}>
-				<span class={styles.offlineCirlce}></span>
+				<span className={styles.offlineCirlce}></span>
 			</div>
 			Offline
 		</Button>
