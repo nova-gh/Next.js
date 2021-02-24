@@ -41,7 +41,7 @@ const Home = ({ results }) => {
 			<Container>
 				<Row className={styles.homeRow}>
 					<Image
-						src="/avatar.svg"
+						src="/avatar1.svg"
 						alt="avatar"
 						width={200}
 						height={200}
@@ -56,6 +56,7 @@ const Home = ({ results }) => {
 				</Row>
 				<Row className={styles.homeRow}>
 					<h1 className={styles.title}>
+						a {}
 						<a
 							href="https://www.twitch.tv/sifk"
 							target="_blank"
