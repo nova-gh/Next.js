@@ -34,9 +34,9 @@ export default function About() {
 						<h5 className={styles.title}>Hobbies</h5>
 						<p className={styles.text}>
 							When I am not streaming, I like to stay active. My favorite way to
-							stay active would be doing Jui Jitsu or playing soccer. I am also
-							a tech and coffee enthusiast, and my go-to method for making
-							strong coffee would be a slow drip.
+							stay active would be doing Brazilian Jiu-Jitsu or playing soccer.
+							I am also a tech and coffee enthusiast, and my go-to method for
+							making strong coffee would be a slow drip.
 						</p>
 					</Media.Body>
 					<img
