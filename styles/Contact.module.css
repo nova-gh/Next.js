@@ -6,13 +6,25 @@
 	justify-content: flex-start;
 	align-items: center;
 }
+.contactCont {
+	padding-bottom: 2%;
+	padding-top: 3%;
+}
 .contactRow {
-	padding-top: 16%;
-
-	padding-bottom: 16%;
+	justify-content: center;
+}
+.link {
+}
+.text {
+	text-align: center;
+	font-size: 1.5rem;
 }
 .socialCont {
-	max-width: 40%;
+	width: 8%;
+}
+.socials {
+	max-width: 8%;
+	margin: auto 10px auto 10px;
 }
 .title a {
 	color: red;

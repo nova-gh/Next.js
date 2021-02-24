@@ -10,60 +10,54 @@ import {
 import { Row, Col, Container } from "react-bootstrap";
 export default function Contact() {
 	return (
-		<div className={styles.wrapper}>
+		<Container className={styles.wrapper}>
 			<Meta
 				title="Contact"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
-			/>
-			<Container>
+			/>{" "}
+			<h5 className={styles.text}>
+				Come say hi on the stream or any of my socials.
+			</h5>
+			<Container className={styles.contactCont}>
+				<Row lg="12" className={styles.contactRow}>
+					<a href="https://www.twitch.tv/sifk" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon
+							icon={faTwitch}
+							style={{ color: "#9147ff" }}
+							size="2x"
+							className={styles.socials}
+						/>
+					</a>
+				</Row>
 				<Row className={styles.contactRow}>
-					<Col sm="4" md="4" lg="12" className>
-						<Container className={styles.socialCont}>
-							<a
-								href="https://www.twitch.tv/sifk"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitch}
-									style={{ color: "#9147ff" }}
-									size="1xs"
-								/>
-							</a>
-						</Container>
-					</Col>
-					<Col sm="4" md="4" lg="12" className>
-						<Container className={styles.socialCont}>
-							<a
-								href="https://twitter.com/SIFKontwitch"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									style={{ color: "#1da1f2" }}
-									size="1x"
-								/>
-							</a>
-						</Container>
-					</Col>
-					<Col sm="4" md="4" lg="12" className>
-						<Container className={styles.socialCont}>
-							<a
-								href="https://discord.com/invite/NjpVcEu"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									style={{ color: "#7289da" }}
-									icon={faDiscord}
-									size="1x"
-								/>
-							</a>
-						</Container>
-					</Col>
+					<a
+						href="https://twitter.com/SIFKontwitch"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<FontAwesomeIcon
+							icon={faTwitter}
+							style={{ color: "#1da1f2" }}
+							size="1x"
+							className={styles.socials}
+						/>
+					</a>
+				</Row>
+				<Row className={styles.contactRow}>
+					<a
+						href="https://discord.com/invite/NjpVcEu"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<FontAwesomeIcon
+							style={{ color: "#7289da" }}
+							icon={faDiscord}
+							size="1x"
+							className={styles.socials}
+						/>
+					</a>
 				</Row>
 			</Container>
-		</div>
+		</Container>
 	);
 }
