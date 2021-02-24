@@ -9,21 +9,24 @@
 .contactCont {
 	padding-bottom: 2%;
 	padding-top: 3%;
+	vertical-align: middle;
 }
 .contactRow {
 	justify-content: center;
 }
-.link {
+.linkCont {
+	height: 90px;
+	width: 90px;
+	padding-top: 2%;
 }
 .text {
 	text-align: center;
 	font-size: 1.5rem;
+	padding-top: 5%;
 }
 .socialCont {
-	width: 8%;
 }
 .socials {
-	max-width: 8%;
 	margin: auto 10px auto 10px;
 }
 .title a {
@@ -42,4 +45,9 @@
 	line-height: 1.15;
 	padding-top: 1rem;
 	font-size: 3rem;
+}
+@media only screen and (max-width: 577px) {
+	.linkCont {
+		padding-top: 4%;
+	}
 }

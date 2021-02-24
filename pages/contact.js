@@ -16,46 +16,57 @@ export default function Contact() {
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
 			/>{" "}
 			<h5 className={styles.text}>
-				Come say hi on the stream or any of my socials.
+				Come say hi on the stream or hit me up through my socials.
 			</h5>
+			<img className="pt-2 rounded" alt="sifk" src="/hi.png" />
 			<Container className={styles.contactCont}>
 				<Row lg="12" className={styles.contactRow}>
-					<a href="https://www.twitch.tv/sifk" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon
-							icon={faTwitch}
-							style={{ color: "#9147ff" }}
-							size="2x"
-							className={styles.socials}
-						/>
-					</a>
+					<Container className={styles.linkCont}>
+						<a
+							href="https://www.twitch.tv/sifk"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon
+								icon={faTwitch}
+								style={{ color: "#9147ff" }}
+								size="2x"
+								className={styles.socials}
+							/>
+						</a>
+					</Container>
 				</Row>
 				<Row className={styles.contactRow}>
-					<a
-						href="https://twitter.com/SIFKontwitch"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<FontAwesomeIcon
-							icon={faTwitter}
-							style={{ color: "#1da1f2" }}
-							size="1x"
-							className={styles.socials}
-						/>
-					</a>
+					<Container className={styles.linkCont}>
+						<a
+							href="https://twitter.com/SIFKontwitch"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon
+								icon={faTwitter}
+								style={{ color: "#1da1f2" }}
+								size="1x"
+								className={styles.socials}
+							/>
+						</a>
+					</Container>
 				</Row>
 				<Row className={styles.contactRow}>
-					<a
-						href="https://discord.com/invite/NjpVcEu"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<FontAwesomeIcon
-							style={{ color: "#7289da" }}
-							icon={faDiscord}
-							size="1x"
-							className={styles.socials}
-						/>
-					</a>
+					<Container className={styles.linkCont}>
+						<a
+							href="https://discord.com/invite/NjpVcEu"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FontAwesomeIcon
+								style={{ color: "#7289da" }}
+								icon={faDiscord}
+								size="1x"
+								className={styles.socials}
+							/>
+						</a>
+					</Container>
 				</Row>
 			</Container>
 		</Container>
