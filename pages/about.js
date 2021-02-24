@@ -51,7 +51,7 @@ export default function About() {
 						width={120}
 						height={120}
 						alt="yosemite"
-						src="/hunt.jpg"
+						src="/hunt.JPG"
 					/>
 					<Media.Body>
 						<h5 className={styles.title}>Streaming Content</h5>
