@@ -68,7 +68,6 @@ const Home = ({ results }) => {
 						</a>
 					</h1>
 				</Row>
-
 				<Row className={styles.statusRow}>{statusButton}</Row>
 			</Container>
 		</div>
