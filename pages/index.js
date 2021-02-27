@@ -7,7 +7,7 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 	const res = await fetch(
 		"https://api.twitch.tv/helix/streams?user_login=sifk",
 		{
