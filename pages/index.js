@@ -7,7 +7,7 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 	const res = await fetch(process.env.API_URL, {
 		headers: {
 			Authorization: process.env.AUTH,
