@@ -23,16 +23,16 @@ export async function getStaticProps(context) {
 		props: { results: data },
 	};
 }
-const Home = () => {
-	// const Home = ({ results }) => {
-	// const apiResults = results.data;
-	// console.log(apiResults);
-	// var statusButton;
-	// if (!Array.isArray(apiResults) || !apiResults.length) {
-	// 	statusButton = <Offline />;
-	// } else {
-	// 	statusButton = <Online />;
-	// }
+// const Home = () => {
+const Home = ({ results }) => {
+	const apiResults = results.data;
+	console.log(apiResults);
+	var statusButton;
+	if (!Array.isArray(apiResults) || !apiResults.length) {
+		statusButton = <Offline />;
+	} else {
+		statusButton = <Online />;
+	}
 	return (
 		<div className={styles.wrapper}>
 			<Meta
