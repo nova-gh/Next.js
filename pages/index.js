@@ -69,7 +69,7 @@ const Home = ({ results }) => {
 					</h1>
 				</Row>
 
-				{/* <Row className={styles.statusRow}>{statusButton}</Row> */}
+				<Row className={styles.statusRow}>{statusButton}</Row>
 			</Container>
 		</div>
 	);
