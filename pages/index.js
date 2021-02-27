@@ -29,7 +29,7 @@ const Home = ({ results }) => {
 	console.log(apiResults);
 	var statusButton;
 	if (!Array.isArray(apiResults) || !apiResults.length) {
-		statusButton = <Online />;
+		statusButton = <Offline />;
 	} else {
 		statusButton = <Online />;
 	}
