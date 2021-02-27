@@ -37,6 +37,7 @@ const Home = ({ results }) => {
 				title="Home"
 				desc="Sifk's Twitch Streamer. Come say hello in the chat."
 			/>
+
 			<Container>
 				<Row className={styles.homeRow}>
 					<Image
