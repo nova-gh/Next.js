@@ -7,21 +7,19 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
-// export async function getServerSideProps() {
-// 	// console.log(process.env.AUTH);
-// 	// console.log(process.env.CID);
-// 	const res = await fetch(process.env.API_URL, {
-// 		headers: {
-// 			Authorization: process.env.AUTH,
-// 			"Client-Id": process.env.CID,
-// 		},
-// 	});
-// 	const results = await res.json();
-// 	// console.log(results);
-// 	return {
-// 		props: { results },
-// 	};
-// }
+export async function getServerSideProps() {
+	const res = await fetch(process.env.API_URL, {
+		headers: {
+			Authorization: process.env.AUTH,
+			"Client-Id": process.env.CID,
+		},
+	});
+	const results = await res.json();
+	console.log(results);
+	return {
+		props: { results },
+	};
+}
 const Home = () => {
 	// const Home = ({ results }) => {
 	// const apiResults = results.data;
