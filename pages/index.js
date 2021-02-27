@@ -7,7 +7,7 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 	const res = await fetch(
 		"https://api.twitch.tv/helix/streams?user_login=sifk",
 		{
@@ -29,7 +29,7 @@ const Home = ({ results }) => {
 	console.log(apiResults);
 	var statusButton;
 	if (!Array.isArray(apiResults) || !apiResults.length) {
-		statusButton = <Offline />;
+		statusButton = <Online />;
 	} else {
 		statusButton = <Online />;
 	}
