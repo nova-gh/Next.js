@@ -8,12 +8,15 @@ import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
 export async function getStaticProps(context) {
-	const res = await fetch(process.env.API_URL, {
-		headers: {
-			Authorization: process.env.AUTH,
-			"Client-Id": process.env.CID,
-		},
-	});
+	const res = await fetch(
+		"https://api.twitch.tv/helix/streams?user_login=sifk",
+		{
+			headers: {
+				Authorization: process.env.AUTH,
+				"Client-Id": process.env.CID,
+			},
+		}
+	);
 	const data = await res.json();
 	console.log(data);
 	return {
