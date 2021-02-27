@@ -7,30 +7,31 @@ import Online from "../comps/Online";
 import Offline from "../comps/Offline";
 import { Row, Col, Container } from "react-bootstrap";
 
-export async function getServerSideProps() {
-	// console.log(process.env.AUTH);
-	// console.log(process.env.CID);
-	const res = await fetch(process.env.API_URL, {
-		headers: {
-			Authorization: process.env.AUTH,
-			"Client-Id": process.env.CID,
-		},
-	});
-	const results = await res.json();
-	// console.log(results);
-	return {
-		props: { results },
-	};
-}
-const Home = ({ results }) => {
-	const apiResults = results.data;
-	console.log(apiResults);
-	var statusButton;
-	if (!Array.isArray(apiResults) || !apiResults.length) {
-		statusButton = <Offline />;
-	} else {
-		statusButton = <Online />;
-	}
+// export async function getServerSideProps() {
+// 	// console.log(process.env.AUTH);
+// 	// console.log(process.env.CID);
+// 	const res = await fetch(process.env.API_URL, {
+// 		headers: {
+// 			Authorization: process.env.AUTH,
+// 			"Client-Id": process.env.CID,
+// 		},
+// 	});
+// 	const results = await res.json();
+// 	// console.log(results);
+// 	return {
+// 		props: { results },
+// 	};
+// }
+const Home = () => {
+	// const Home = ({ results }) => {
+	// const apiResults = results.data;
+	// console.log(apiResults);
+	// var statusButton;
+	// if (!Array.isArray(apiResults) || !apiResults.length) {
+	// 	statusButton = <Offline />;
+	// } else {
+	// 	statusButton = <Online />;
+	// }
 	return (
 		<div className={styles.wrapper}>
 			<Meta
@@ -67,7 +68,7 @@ const Home = ({ results }) => {
 					</h1>
 				</Row>
 
-				<Row className={styles.statusRow}>{statusButton}</Row>
+				{/* <Row className={styles.statusRow}>{statusButton}</Row> */}
 			</Container>
 		</div>
 	);
